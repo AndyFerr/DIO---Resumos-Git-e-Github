@@ -7,7 +7,10 @@ Repositório para armazenar resumos sobre Git e Github o curso Versionamento de 
 ## 📚Documentação
 - [Documentação Git](https://www.git-scm.com/doc)
 - [Documentação Github](https://www.docs.github.com/)
-- [Editando um README](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
+
+## 📝 Video aulas de lembrete
+- [Editando um README - minuto 7](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
+- [Baixando e enviando alterações com o repo remoto - minuto 6](https://web.dio.me/course/versionamento-de-codigo-com-git-e-github/learning/dd17c56e-2327-493c-942a-358a49a26549?back=/track/santander-2024-backend-com-java&utm_source=engagement&utm_medium=email&utm_campaign=santander-2024-backend-com-java&utm_term=bootcamp-users&utm_content=daily-study-plan-next-activity-cta)
 
 ## 📝 Conceitos e lembretes
 - O git não reconhece diretórios vazios, fazendo-se necessário que haja algum arquivo dentro dele; para isso, é comumente usado um arquivo vazio chamado ".gitkeep".
@@ -16,7 +19,7 @@ Repositório para armazenar resumos sobre Git e Github o curso Versionamento de 
 
 - Ao modificar um arquivo, ele cai na árvore de trabalho; caso o modifique pro que era antes, o git entende que não ouve alterações e o remove dessa área.
 
--
+- Para enviar as alterações é preciso que você as salve em um commit
 
 ## 💻 Códigos gerais no Git
 
@@ -116,3 +119,10 @@ _Apagar o commit e seus arquivos_
 git reset <nome do arquivo>
 ```
 _Removendo um arquivo da área de preparação_
+
+---
+### Enviando alterações
+```
+git remote add origin <link do repositório>
+git push -u origin main
+```
