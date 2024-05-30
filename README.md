@@ -4,9 +4,11 @@
 Repositório para armazenar resumos sobre Git e Github o curso Versionamento de Código Git e Github da [Digital Innovation One](https://www.dio.me/).
 
 
-## 📚Documentação
-- [Documentação Git](https://www.git-scm.com/doc)
+## 📚Documentação e material de apoio
+- [Documentação Git](https://www.git-scm.com/docs)
 - [Documentação Github](https://www.docs.github.com/)
+- [Material de apoio elidiana](https://github.com/elidianaandrade/dio-curso-git-github)
+- [Guia rápido para linguagem markdown](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github#next-steps)
 
 ## 📝 Video aulas de lembrete
 - [Editando um README - minuto 7](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
@@ -88,6 +90,10 @@ _Cria um arquivo vazio_
 echo <nome do arquivo> .gitignore
 ```
 _Cria um arquivo ".gitignore" ao mesmo tempo que manda um arquivo para dentro dentro dele, assim o git não o reconhecerá_
+```
+echo "mensagem" > <nome do arquivo>.txt
+```
+_Cria um arquivo txt e escreve o conteúdo dentro das aspas no arquivo_
 
 ---
 ### Desfazendo comandos no Git
@@ -125,4 +131,45 @@ _Removendo um arquivo da área de preparação_
 ```
 git remote add origin <link do repositório>
 git push -u origin main
+```
+_Caso o repo ja tenha sido adicionado só precisa de:_
+```
+git push origin main
+```
+
+---
+### Mexendo com Branches
+- Existe uma branch chamada origin/main que é meio que oculta; não entendi bem como funciona ainda mas é tipo uma branch remota
+
+_Criando e mudando de uma Branch para outra. Se quiser apenas mudar pra uma já existente, exclui-se o "-b"_
+```
+git checkout -b <nome da branch>
+```
+_LIstando os apontamentos das branchs para os seus commits_
+```
+git branch -v
+```
+_Listar as branchs existentes no momento_
+```
+git branch
+```
+_Para mesclar os arquivos entre branchs_
+```
+git merge <nome da outra branch>
+```
+_Deletar uma branch_
+```
+git branch -d <nome da branch>
+```
+_Para baixar alterações do repo remoto pro local sem ser na sua branch main:_
+```
+git fetch origin main
+```
+_Para trazer o arquivo da branch remota_
+```
+git merge origin/main
+```
+_Para clonar apenas uma das branchs de um repo remoto:_
+```
+git clone <URL do repo> --branch <nome da branch> --single-branch
 ```
