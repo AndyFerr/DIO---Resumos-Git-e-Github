@@ -9,6 +9,7 @@ Repositório para armazenar resumos sobre Git e Github o curso Versionamento de 
 - [Documentação Github](https://www.docs.github.com/)
 - [Material de apoio elidiana](https://github.com/elidianaandrade/dio-curso-git-github)
 - [Guia rápido para linguagem markdown](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github#next-steps)
+- [Utilitários para criação de perfil no github](https://github.com/digitalinnovationone/dio-lab-open-source/tree/main/utils).
 
 ## 📝 Video aulas de lembrete
 - [Editando um README - minuto 7](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
@@ -21,7 +22,9 @@ Repositório para armazenar resumos sobre Git e Github o curso Versionamento de 
 
 - Ao modificar um arquivo, ele cai na árvore de trabalho; caso o modifique pro que era antes, o git entende que não ouve alterações e o remove dessa área.
 
-- Para enviar as alterações é preciso que você as salve em um commit
+- Para enviar as alterações é preciso que você as salve em um commit.
+
+- QUando for baixar atualizações de um repositótio remoto, referencia-se através do nome do repo e da branch; geralmente "origin" e "main", respectivamente.
 
 ## 💻 Códigos gerais no Git
 
